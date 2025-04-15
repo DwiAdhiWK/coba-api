@@ -47,7 +47,16 @@ def getDataByName(name: str):
 # @app.post("/addData")
 # def addData(added_item: dict):
 #     # 1. baca data dari csv
-#     df = pd.read_csv('data.csv')
+#         # 1. baca data dari csv
+#         df = pd.read_csv('data.csv')
+
+#     # 2. delete nama by filter
+#         result = df.loc[len(df)] = added_item
+
+#     # 3. replace csv existing -> data yang difilter akan hilang
+#         result.to_csv('data.csv',index=False)
+
+#         return result.to_dict(orient="records")
 
 
 
