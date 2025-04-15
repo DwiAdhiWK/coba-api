@@ -51,7 +51,7 @@ def addData(added_item: dict):
         df = pd.read_csv('data.csv')
 
     # 2. nambah 1 row by filter
-        df.loc[len(df)] = [added_item]
+        df.loc[len(df)] = added_item
 
     # 3. replace csv existing -> data yang difilter akan hilang
         df.to_csv('data.csv',index=False)
